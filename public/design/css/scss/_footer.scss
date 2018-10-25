@@ -1,0 +1,47 @@
+footer{
+    background-color: $color1;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .footer-head{
+        color: $color5;
+        font-size: $font28;
+        margin-bottom: 12px;
+    }
+    p{
+        color: $main-color;
+        font-size: $font16;
+        margin-bottom: 0;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            a{
+                color: $main-color;
+                font-size: $font20;
+            }
+        }
+    }
+    span{
+        color: $color5;
+        font-size: $font22;
+    }
+    .socil{
+        padding-top: 81px;
+        .lgo-footer{
+            display: block;
+            width: 160px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+        }
+        ul{
+            li{
+                display: inline-block;
+                text-align: center;
+                margin-left: 5px;
+            }
+        }
+    }
+}

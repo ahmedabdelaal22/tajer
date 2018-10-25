@@ -1,0 +1,133 @@
+.signup {
+    height: 100vh;
+    background: url(../Images/singup_bg.jpg) center center no-repeat;
+    background-size: cover;
+    padding-top: 195px;
+
+    img {
+        border-radius: 5px 0px 0px 5px;
+        width: 100%;
+        height: 604px;
+        object-fit: cover;
+    }
+
+    .form {
+        background-color: $main-color;
+        min-height: 604px;
+        border-radius: 0px 5px 5px 0px;
+        padding-top: 75px;
+        padding-right: 38px;
+        padding-left: 38px;
+
+        h2 {
+            font-size: $font55;
+            font-family: $bolder;
+            margin-bottom: 32px;
+        }
+
+        form {
+            input {
+                @extend %input-style;
+                margin-bottom: 18px;
+               
+
+                &:last-of-type {
+                    margin-bottom: 65px;
+                }
+            }
+        }
+
+        .btn {
+            @extend %btn1;
+            font-size: $font22;
+            font-family: $bolder;
+        }
+
+        a {
+            font-size: $font22;
+            color: $color1;
+
+            &:hover {
+                color: $color1;
+            }
+        }
+    }
+}
+
+// Start Page signup
+.signup {
+    background: url(../Images/signin_bg.jpg) center center no-repeat;
+    background-size: cover;
+
+    img {
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    .form2 {
+        border-radius: 5px 0px 0px 5px;
+        padding-top: 133px;
+
+        form {
+            .pass {
+                margin-bottom: 6px !important;
+            }
+
+            a {
+                color: $color4;
+                text-align: left;
+                margin-bottom: 36px;
+                display: block;
+            }
+          
+        }
+         
+    }
+    .lbl-signup{
+        width:100%;
+          margin-bottom:18px;
+          input[type="radio"]{
+            display:none;
+          
+            + span{
+                display:block;
+                width:100%;
+                height:40px;
+                border:1px solid $color4;
+                border-radius:5px;
+                padding-right:15px;
+                line-height:35px;
+                cursor:pointer;
+                color:$color4;
+                font-size:$font20;
+            }
+            &:checked{
+                + span{
+                  border:1px solid $color2;
+                  color:$color2;
+                }
+            }
+                }
+            }   
+    }
+
+.forget{
+    background: url(../Images/forgetpw_bg.jpg) center center no-repeat;
+    background-size: cover;
+    .form3{
+        p{
+            color: $color1;
+            font-size: $font28;
+            margin-bottom: 40px;
+        }
+        form{
+            input{
+                margin-bottom: 13px !important;
+            }
+            a{
+                display: block;
+                text-align: left;
+                margin-bottom: 36px;
+            }
+        }
+    }
+}

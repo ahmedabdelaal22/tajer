@@ -1,0 +1,73 @@
+/*
+webname:TAJER
+Coder name :Ali MAhmoud 
+start Date :30/9/2018
+*/
+
+@import 'scss/vars';
+@import 'scss/component';
+
+/*Rest*/
+a {
+    text-decoration: none;
+    outline: none;
+    &:hover {
+        text-decoration: none;
+        outline: none;
+        color: $main-color;
+    }
+}
+
+/*Import Font*/
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cairo2';
+    src: url('../fonts/Cairo-SemiBold.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: bolder;
+}
+
+
+
+body {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    direction: rtl;
+    text-align: right;
+    font-family: $defult;
+    &::-webkit-scrollbar {
+        width: 5px;
+        height: 30px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $color5;
+        border-radius: 3px;
+    }
+}
+@import 'scss/navbar';
+@import 'scss/home';
+@import 'scss/footer';
+@import 'scss/login-rigster';
+@import 'scss/contact';
+@import 'scss/newaddress';
+@import 'scss/brands';
+@import 'scss/categories';
+@import 'scss/item-details';
+@import 'scss/mycart';
+@import 'scss/payment';
+@import 'scss/favorit';
+@import 'scss/myorders';
+@import 'scss/aboutus';
+@import 'scss/myproducts';
+@import 'scss/products';
+@import 'scss/addproduct';
+@import 'scss/requests';

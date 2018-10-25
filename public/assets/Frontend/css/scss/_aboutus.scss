@@ -1,0 +1,21 @@
+.aboutus{
+    padding-top: 84px;
+    padding-bottom: 84px;
+    h1{
+        color: $color2;
+        font-size: $font35;
+        margin-bottom: 30px;
+    }
+    h2{
+        color: $color1;
+        font-size: $font30;
+        font-family: $bolder;
+        margin-bottom: 30px;
+    }
+    p{
+        color: $color1;
+        font-size: $font17;
+        line-height: 2;
+
+    }
+}

@@ -1,0 +1,233 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Page Title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+
+    </head>
+
+    <body>
+
+        <section>
+
+            <div style="font-size: 30px;
+                 font-weight: bold;
+                 background: #ccc;
+                 max-width:400px;
+                 text-align: center;
+                 padding: 9px;
+                 margin-top:10px;">  التابعى الدمياطى
+            </div>
+
+
+            <table style="border-bottom: 2px solid;
+                   padding-bottom: 5px;
+                   margin-top: 10px;">
+                                   <tr>
+                    <th style="text-align: left;font-size: 11px;">Order:</th>  
+                    <td style="20px;font-size: 11px;font-weight:bold;">110552</td>   
+                    <th  style="text-align: left;font-size: 11px;padding-left: 30px;">Count:</th>  
+                    <td style="font-size: 11px;font-weight:bold;">2</td>     
+                </tr>
+                
+                <tr>
+                    <th  style="text-align: left;font-size: 11px;">Date:</th>  
+                    <td style="font-size: 11px; font-weight:bold;">2018-01-16</td>   
+                    <th  style="text-align: left;font-size: 11px;padding-left: 30px;">Payment:</th>  
+                    <td style="font-size: 11px; font-weight:bold;">Cash</td>      
+                </tr>
+
+                <tr>
+                    <th  style="text-align: left;font-size: 11px;">Time In:</th>  
+                    <td style="font-size: 11px; font-weight:bold;">11:09:54 ص                    </td>   
+                    <th  style="text-align: left;font-size: 11px;padding-left: 30px;">Time Out:</th>  
+                    <td style="font-size: 11px; font-weight:bold;">12:51:30 م               </td>    
+                </tr>
+
+                <tr>
+                    <th  style="text-align: left;font-size: 11px;">Cashier:</th>  
+                    <td style="font-size: 11px; font-weight:bold;">Farid                                             </td>   
+                    <th  style="text-align: left;font-size: 11px;padding-left: 30px;">Shift:</th>  
+                    <td style="font-size: 11px; font-weight:bold;">Morning</td>    
+                </tr>
+
+                <tr>
+                    <th  style="text-align: left;font-size: 11px;">Pilot:</th>  
+                    <td style="font-size: 11px; font-weight:bold;"></td>      
+                </tr>
+
+            </table>
+
+            <table style="border-bottom: 2px solid;
+                   padding-bottom: 10px;
+                   margin-top: 10px;
+                   width:235px;">
+
+                <tr>
+                    <th  style="text-align: left;font-size: 11px;width: 56px;">Name:</th>  
+                    <td style="font-size: 11px;font-weight:bold;">محمد مصطفى.                                       </td>    
+                </tr>
+
+                <tr>
+                    <th  style="text-align: left;font-size: 11px;    width: 56px;">Tell:</th>  
+                    <td style="font-size: 11px;font-weight:bold;">22901872            </td>       
+                </tr>
+
+                <tr>
+                    <th  style="text-align: left;font-size: 11px;    width: 56px;">Location:</th>  
+                    <td style="font-size: 11px;font-weight:bold;">ارض الجولف.                                       </td>       
+                </tr>
+
+                <tr>
+                    <th  style="text-align: left;font-size: 11px;    width: 56px;">Address:</th>  
+                    <td style="font-size: 11px;font-weight:bold;">ع17 مشروع كلية البنات.                                                                              </td>       
+                </tr>
+
+                <tr>
+                    <th  style="text-align: left;font-size: 11px;    width: 56px;">Floor No:</th>  
+                    <td style="font-size: 11px;font-weight:bold;">4                                                 </td>      
+                </tr>
+
+                <tr>  
+                    <th  style="text-align: left;font-size: 11px;    width: 56px;">Flat No:</th>  
+                    <td style="font-size: 11px;font-weight:bold;">41                                                </td> 
+                </tr>
+
+                <tr>
+                    <th  style="text-align: left;font-size: 11px;    width: 56px;">LandMark:</th>  
+                    <td style="font-size: 11px;font-weight:bold;">حلف دار الدفاع الجوى.                                                                                                                                 </td>       
+                </tr>
+
+            </table>
+
+
+            <table style="border-bottom: 2px solid;">
+
+                <tr>
+                    <th style="text-align: left;padding: 8px;font-size: 11px;font-weight: bold;border-bottom: 2px solid;">QTY</th>    
+                    <th style="text-align: left;padding: 8px;font-size: 11px;font-weight: bold;border-bottom: 2px solid;">Description</th> 
+                    <th style="text-align: left;padding: 8px;font-size: 11px;font-weight: bold;border-bottom: 2px solid;">Price</th> 
+                    <th style="text-align: left;padding: 8px;font-size: 11px;font-weight: bold;border-bottom: 2px solid;">Total</th>  
+
+                </tr>
+
+                                                        <tr>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">1 </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">Cold Stone Oreo Ice C                             </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">20.00</td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">20.00</td>
+
+                    </tr>
+
+                                                        <tr>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">1 </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">Diet Pepsi Can.                                   </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">12.00</td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">12.00</td>
+
+                    </tr>
+
+                                                        <tr>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">1 </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">Pepsi Liter.                                      </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">16.00</td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">16.00</td>
+
+                    </tr>
+
+                                                        <tr>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">1 </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">Mineral Water.                                    </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">7.00</td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">7.00</td>
+
+                    </tr>
+
+                                                        <tr>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">1 </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">Old School 150 grm.                               </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">39.00</td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">39.00</td>
+
+                    </tr>
+
+                                                        <tr>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">1 </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">Animal Style 200 grm.                             </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">60.00</td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">60.00</td>
+
+                    </tr>
+
+                                                        <tr>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">1 </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">BURGER 101 - 200gm                                </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">50.00</td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">50.00</td>
+
+                    </tr>
+
+                                                        <tr>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">1 </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">The Urban - Chicken                               </td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">62.00</td>
+                        <td style="text-align: left;font-size: 11px;font-weight: bold;">62.00</td>
+
+                    </tr>
+
+                
+            </table>
+
+            <ul style="-webkit-padding-start:0px;list-style: none;margin-left: 45px;">
+
+                <li style="font-size: 15px;font-weight: bold;margin-bottom: 5px;border-bottom: 1px dotted;max-width:365px;padding-bottom:5px;">
+                    <span>Sub Total</span> <span style="float: right;padding-right: 40px;"> 266.00</span></li>  
+
+                <li style="font-size: 15px;font-weight: bold;margin-bottom: 5px;border-bottom: 1px dotted;max-width:365px;padding-bottom:5px;"> 
+                    <span>Home Delivery</span>  <span style="float: right;padding-right: 40px;">  9.00 </span> </li> 
+
+                <li style="font-size: 15px;font-weight: bold;margin-bottom: 5px;border-bottom: 1px dotted;max-width:365px;padding-bottom:5px;"> 
+                    <span>Tax</span>  <span style="float: right;padding-right: 40px;">  38.50 </span> </li>   
+
+                <li style="font-size: 15px;font-weight: bold;margin-bottom: 5px;max-width:365px;padding-bottom:5px;"> 
+                    <span>DISC</span>  <span style="float: right;padding-right: 40px;"> 0.00 </span></li>   
+
+
+            </ul>
+
+            
+            <div style="  background: #999;
+                 max-width:400px;
+                 text-align: center;
+                 padding: 15px;
+                 border-top: 2px solid;"> 
+                <h2 style="margin: 0;padding:5px 0;">FINAL TOTAL</h2>    
+                <h3 style="margin: 0;padding: 5px 0;font-size: 20px">313.5</h3>    
+            </div>
+
+            <p style="font-size: 20px;
+               font-weight: bold;
+               padding-left:60px;">Thanks For Call</p>
+
+
+
+
+            <button onclick="myFunction()">Print this page</button>
+            <a href="http://localhost/workspace/CallCenter/print_invoice/110552"><button>Print reseet</button></a>
+
+
+            <script>
+                function myFunction() {
+                    window.print();
+                }
+            </script>
+
+
+
+
+        </section>
+
+    </body>
+</html>

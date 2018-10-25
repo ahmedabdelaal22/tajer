@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>api tajer</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <h1>“Tajer” API Requirements</h1>
+        <h2>url_ar:<a>http://dev.lodex-solutions.com/workspace/tajer/api/ar</a><br>
+        url_en:<a>http://dev.lodex-solutions.com/workspace/tajer/api/en</a><br></h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Url</th>
+                    <th scope="col">Request</th>
+                    <th scope="col">Response</th>
+                    <th scope="col">Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/login<br>
+                    http://dev.lodex-solutions.com/workspace/tajer/api/en/login
+                    </th>
+                    <td>{<br>
+"email":"admin@lodex.com",<br>
+"password":"12345678"<br>
+} </td>
+                    <td>
+                        {<br>
+    "msg": "Login success",<br>
+    "status": true,<br>
+    "result": [<br>
+        {<br>
+            "id": 1,<br>
+            "username": "admin user1",<br>
+            "email": "admin@lodex.com",<br>
+            "profile_image": "2018/04/01/201804011439391747073736_user_img.jpg",<br>
+            "cart_count": 0,<br>
+            "phone": 155555598996565,<br>
+              "country": "مصر",<br>
+            "address": null,<br>
+            "unit_number": null,<br>
+            "floor_number": null<br>
+        }<br>
+    ]<br>
+}
+                    </td>
+                    <td><img src="02.Sign in Page.jpg" style="width: 400px;"></td>
+                </tr>
+                  <tr>
+                      <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/loginFacebook<br>
+                      http://dev.lodex-solutions.com/workspace/tajer/api/en/loginFacebook
+                      </th>
+                    <td>
+                    {<br>
+"FacebookID":"123456789"<br>
+} <br>
+                    </td>
+                    <td>
+                        {<br>
+    "msg": "Login success",<br>
+    "status": true,<br>
+    "result": [<br>
+        {<br>
+            "id": 1,<br>
+            "username": "admin user1",<br>
+            "email": "admin@lodex.com",<br>
+            "profile_image": "2018/04/01/201804011439391747073736_user_img.jpg",<br>
+            "cart_count": 0,<br>
+            "phone": 155555598996565,<br>
+            "ar_name": "مصر",<br>
+            "en_name": "Egypt",<br>
+            "address": null,<br>
+            "unit_number": null,<br>
+            "floor_number": null<br>
+        }<br>
+    ]<br>
+}
+                    </td>
+                    <td><img src="02.Sign in Page.jpg" style="width: 400px;"></td>
+                </tr>
+                         <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/loginGoogle</th>
+               <td>
+                    {<br>
+"GoogleID":"123456789"<br>
+} <br>
+                    </td>
+                    <td>
+                        {<br>
+    "msg": "Login success",<br>
+    "status": true,<br>
+    "result": [<br>
+        {<br>
+            "id": 1,<br>
+            "username": "admin user1",<br>
+            "email": "admin@lodex.com",<br>
+            "profile_image": "2018/04/01/201804011439391747073736_user_img.jpg",<br>
+            "cart_count": 0,<br>
+            "phone": 155555598996565,<br>
+            "country": "مصر",<br>
+         
+            "address": null,<br>
+            "unit_number": null,<br>
+            "floor_number": null<br>
+        }<br>
+    ]<br>
+}
+                    </td>
+                    <td><img src="02.Sign in Page.jpg" style="width: 400px;"></td>
+                </tr>
+                  <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/forgotPassword</th>
+               <td>
+                   {<br>
+"email":"ahmed.abdelaal2222@gmail.com"<br>
+}     <br>
+                    </td>
+                    <td>
+ {<br>
+    "message": "New password sent to your mail",<br>
+    "status": true<br>
+}<br>
+                    </td>
+                    <td><img src="04.Forget Password Page.jpg" style="width: 400px;"></td>
+                </tr>
+                            <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/signup</th>
+               <td>
+{<br>
+	"name":"ahmed",<br>
+	"password":"12345678",<br>
+	"phone":"01025417234567",<br>
+"email":"ahmed.abdeladdal2222@gmail.com"<br>
+}   
+                    </td>
+                    <td>
+                        {<br>
+    "msg": "Login success",<br>
+    "status": true,<br>
+    "result": [<br>
+        {<br>
+            "id": 1,<br>
+            "username": "admin user1",<br>
+            "email": "admin@lodex.com",<br>
+            "profile_image": "2018/04/01/201804011439391747073736_user_img.jpg",<br>
+            "cart_count": 0,<br>
+            "phone": 155555598996565,<br>
+            "country": "مصر",<br>
+         
+            "address": null,<br>
+            "unit_number": null,<br>
+            "floor_number": null<br>
+        }<br>
+    ]<br>
+}
+                    </td>
+                    <td><img src="03.Sign up Page.jpg" style="width: 400px;"></td>
+                </tr>
+                    <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/homeCategory</th>
+               <td>
+not data
+                    </td>
+                    <td>
+    {
+    "message": "Successfully",<br>
+    "status": true,<br>
+    "result": [<br>
+        {<br>
+            "id": 1593887710,<br>
+            "name": "أجهزة إلكترونية",<br>
+            "sub_category": [<br>
+                {<br>
+                    "id": 771807094,<br>
+                    "name": "جوالات",<br>
+                    "total": 6<br>
+                },<br>
+                {<br>
+                    "id": 794101726,<br>
+                    "name": "أجهزة منزلية",<br>
+                    "total": 7<br>
+                },<br>
+                {<br>
+                    "id": 811098936,<br>
+                    "name": "إكسسوارات",<br>
+                    "total": 8<br>
+                }<br>
+            ]<br>
+        },<br>
+        ]<br>
+        }<br>
+                    </td>
+                    <td><img src="10.Categories Page.jpg" style="width: 400px;"></td>
+                </tr>
+                                             <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/homeBaner</th>
+               <td>
+not data
+                    </td>
+                    <td>
+                        {<br>
+    "message": "Successfully",<br>
+    "status": true,<br>
+    "result": [<br>
+        {<br>
+            "id": 1,<br>
+            "image": "public/assets/Frontend/images/sliders/s1.jpg"<br>
+        },<br>
+        {<br>
+            "id": 2,<br>
+            "image": "public/assets/Frontend/images/sliders/s1.jpg"<br>
+        }<br>
+    ]<br>
+}<br>
+                    </td>
+                    <td><img src="06.Home Page.jpg" style="width: 400px;"></td>
+                </tr>
+                               <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/homeList</th>
+               <td>
+                   {<br>
+	"UserID":"436269142"<br>
+
+} <br>
+                    </td>
+                    <td>
+{<br>
+    "msg": "success",<br>
+    "status": true,<br>
+    "result": {<br>
+        "featured": [<br>
+            {<br>
+                "id": -1840377588,<br>
+                "image": "/public/uploads/items/2018/03/22/20180322093636135060945_items.jpg"<br>
+            },<br>
+            {<br>
+                "id": -1640520342,<br>
+                "image": "/public/uploads/items/2018/03/22/201803221521072018544076_items.jpg"<br>
+            }<br>
+        ],<br>
+        "items": [<br>
+            {<br>
+                "id": 1597803668676827,<br>
+                "title": "mobilehb",<br>
+                "image": "/public/uploads/items/2018/04/15/20180415092521804631039_items.png",<br>
+                "price": -4000,<br>
+                "is_favorite": 0<br>
+            },<br>
+            {<br>
+                "id": 1597800221073132,<br>
+                "title": "mobile",<br>
+                "image": "/public/uploads/items/2018/04/15/2018041508303395695840_items.png",<br>
+                "price": 0,<br>
+                "is_favorite": 0<br>
+            },<br>
+            {<br>
+                "id": 1597798204564729,<br>
+                "title": "mobile",<br>
+                "image": "/public/uploads/items/2018/04/15/20180415075830537610121_items.png",<br>
+                "price": 0,<br>
+                "is_favorite": 0<br>
+            },<br>
+            {<br>
+                "id": 1596917807407123,<br>
+                "title": "bag banat22",<br>
+                "image": "/public/uploads/items/2018/04/05/201804051444581119283143_items.jpg",<br>
+                "price": 0,<br>
+                "is_favorite": 0<br>
+            }<br>
+        ]<br>
+    }<br>
+}<br>
+                    </td>
+                    <td><img src="06.Home Page.jpg" style="width: 400px;"></td>
+                </tr>
+                
+                
+                
+                                                 <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/homeSearch</th>
+               <td>
+{<br>
+	"UserID":"436269142",<br>
+
+	"Kye_Word":"ييييييي"<br>
+    
+}   <br>
+                    </td>
+                    <td>
+{<br>
+    "msg": "success",<br>
+    "status": true,<br>
+    "result": []<br>
+}  <br>
+                    </td>
+                    <td><img src="06.Home Page.jpg" style="width: 400px;"></td>
+                </tr>
+                         <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/home_by_cat</th>
+               <td>
+{<br>
+	"UserID":"436269142",<br>
+
+	"CategoryID":"1526943076"<br>
+
+}   <br>
+                    </td>
+                    <td>
+{
+    "msg": "success",
+    "status": true,
+    "result": [
+        {
+            "id": 1242733519,
+            "name": "شنط",
+            "items": [
+                {
+                    "id": 1596917807407123,
+                    "title": "bag banat22",
+                    "image": "/public/uploads/items/2018/04/05/201804051444581119283143_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": -1519367203,
+                    "title": "شنط كروس بوكس قمة في الشياكة",
+                    "image": "/public/uploads/items/2018/03/25/201803250705591240701397_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": -969672577,
+                    "title": "شنط صباحية عملية جدااا وباسعار مميزة",
+                    "image": "/public/uploads/items/2018/03/22/201803221531471924493128_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": -2116620788,
+                    "title": "شنطة خروج بناتي",
+                    "image": "/public/uploads/items/2018/03/22/20180322140517654630792_items.jpg",
+                    "price": 160,
+                    "is_favorite": 0
+                },
+                {
+                    "id": -1632861763,
+                    "title": "شنط سواريه حريمى",
+                    "image": "/public/uploads/items/2018/03/22/20180322104810434181073_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": 393337089,
+                    "title": "شنط حريمي تصنيع يدوي 100 %",
+                    "image": "/public/uploads/items/2018/03/22/20180322075535742141594_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": 523531126,
+                    "title": "شنط كروشيه",
+                    "image": "/public/uploads/items/2018/03/21/20180321123707668863233_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": 1616928631,
+                    "title": "شنط حريمي جلد باشكال والوان مختلفة",
+                    "image": "/public/uploads/items/2018/03/19/201803191555192085524101_items.jpeg",
+                    "price": 0,
+                    "is_favorite": 0
+                }
+            ]
+        },
+        {
+            "id": 1228095851,
+            "name": "فساتين أفراح",
+            "items": [
+                {
+                    "id": 1597798204564729,
+                    "title": "mobile",
+                    "image": "/public/uploads/items/2018/04/15/20180415075830537610121_items.png",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": -1587800846,
+                    "title": "فساتين زفاف  للمحجبات",
+                    "image": "/public/uploads/items/2018/03/25/201803250813091490646263_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": 702323992,
+                    "title": "فساتين سواريه للمحجبات",
+                    "image": "/public/uploads/items/2018/03/25/201803250741171715058982_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": -1080951229,
+                    "title": "فستان سهرة من اجود الخامات",
+                    "image": "/public/uploads/items/2018/03/25/20180325071257181451749_items.jpg",
+                    "price": 40,
+                    "is_favorite": 0
+                },
+                {
+                    "id": 959042427,
+                    "title": "فساتين افراح للبيع باسعار مناااسبة جدااا",
+                    "image": "/public/uploads/items/2018/03/22/20180322134554793723165_items.gif",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": 40918225,
+                    "title": "فستان سواريه بحالة ممتازة",
+                    "image": "/public/uploads/items/2018/03/22/201803220749591017378437_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": 1711297288,
+                    "title": "فستان زفاف بمستلزماته",
+                    "image": "/public/uploads/items/2018/03/21/201803210714401093697284_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": 689253306,
+                    "title": "فستان سواريه ستان ليكرا في جوبير",
+                    "image": "/public/uploads/items/2018/03/19/20180319112222705261889_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                }
+            ]
+        },
+        {
+            "id": 1258339059,
+            "name": "إكسسوارات",
+            "items": [
+                {
+                    "id": -840305457,
+                    "title": "سلسله موديل جديد هاند ميد خامات قويه جدا باشكال مختلفه و اسعار لا تقبل المنافسة",
+                    "image": "/public/uploads/items/2018/03/25/20180325104134645177436_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": 1109744347,
+                    "title": "اكسسوار حريمي فضة",
+                    "image": "/public/uploads/items/2018/03/22/201803221456342121980077_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": -1350835745,
+                    "title": "طقم سواريه جديد رقيق وشياكه",
+                    "image": "/public/uploads/items/2018/03/22/20180322105239209943959_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": 634818943,
+                    "title": "اكسسوار هاندميد",
+                    "image": "/public/uploads/items/2018/03/22/201803220759251289449375_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": 1008922137,
+                    "title": "عقد اكسسوار حريمي وارد المانيا",
+                    "image": "/public/uploads/items/2018/03/21/201803211136341677724139_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                },
+                {
+                    "id": 401536685,
+                    "title": "خاتم فضة حريمي ذات جودة عالية",
+                    "image": "/public/uploads/items/2018/03/20/201803201241341317883619_items.jpg",
+                    "price": 0,
+                    "is_favorite": 0
+                }
+            ]
+        }
+    ]
+}
+                    </td>
+                    <td><img src="06.Home Page.jpg" style="width: 400px;"></td>
+                </tr>
+                
+                                            <tr>
+                                                <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/itemsCategory<br>
+                                                <img src="09.Filter Page.jpg" style="width: 400px;">
+                                                </th>
+               <td>
+{<br>
+	"UserID":"436269142",<br>
+	"sub_CategoryID":"1242733519",<br>
+	"CategoryID":"1526943076",<br>
+		"Low_Price":"0",<br>
+	"High_Price":"100",<br>
+	"Kye_Word":"حريمى",<br>
+        	"colors":"74",<br>
+	"sizes":"1,2"<br>
+            "ofset":"0"<br>
+            
+}   <br>
+                    </td>
+                    <td>
+{
+    "msg": "success",
+    "status": true,
+    "result": {
+        "items": [
+            {
+                "id": -1350835745,
+                "title": "طقم سواريه جديد رقيق وشياكه",
+                "image": "/public/uploads/items/2018/03/22/20180322105239209943959_items.jpg",
+                "price": 0,
+                "is_favorite": 0
+            },
+            {
+                "id": -1350835745,
+                "title": "طقم سواريه جديد رقيق وشياكه",
+                "image": "/public/uploads/items/2018/03/22/20180322105239209943959_items.jpg",
+                "price": 0,
+                "is_favorite": 0
+            }
+        ],
+        "all_size": [
+            {
+                "id": 1597898916302064,
+                "size": "1",
+                "total": 2
+            },
+            {
+                "id": 1597898916342895,
+                "size": "2",
+                "total": 1
+            },
+            {
+                "id": 1592396435619365,
+                "size": "25",
+                "total": 1
+            }
+        ],
+        "all_colors": [
+            {
+                "title": "بنى",
+                "id": 74,
+                "total": 1
+            },
+            {
+                "title": "اخضر",
+                "id": 84,
+                "total": 1
+            },
+            {
+                "title": "احمر ",
+                "id": 88,
+                "total": 1
+            }
+        ]
+    }
+}            
+                    </td>
+                    <td><img src="08.Products Page.jpg" style="width: 400px;"></td>
+                </tr>
+                                   <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/getBrands</th>
+               <td>
+not data
+                    </td>
+                    <td>
+{
+    "msg": "success",<br>
+    "status": true,<br>
+    "result": [<br>
+        {<br>
+            "id": 820920412,<br>
+            "image": "public/uploads/brands/2018/03/19/201803191254381630861139_user_img.jpg"<br>
+        },<br>
+        {<br>
+            "id": 1594027318962505,<br>
+            "image": "public/uploads/brands/2018/03/06/20180306120154859741673_user_img.gif"<br>
+        },<br>
+                    </td>
+                    <td><img src="07.Brands Page.jpg" style="width: 400px;"></td>
+                </tr>
+                                            <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/getItemDetails</th>
+               <td>
+{<br>
+	"UserID":"436269142",<br>
+	"ItemID":"-1080951229"<br>
+
+    
+}   <br>
+                    </td>
+                    <td>
+{
+    "msg": "success",
+    "status": true,
+    "result": {
+        "id": -1080951229,
+        "description": "<p>فستان سهرة من اجود الخامات</p>\r\n\r\n<p>بجميع الالوان</p>\r\n\r\n<p>متاح باغلب المقاسات</p>",
+        "title": "فستان سهرة من اجود الخامات",
+        "image": "/public/uploads/items/2018/03/25/20180325071257181451749_items.jpg",
+        "price": 40,
+        "ratio": 0,
+        "sub_categories_id": 1228095851,
+        "is_favorite": 0,
+        "sub_categories": {
+            "id": 1228095851,
+            "name": "فساتين أفراح"
+        },
+        "items_sizes": [],
+        "items_colors": [],
+        "items_images": [
+            {
+                "id": -1080926844,
+                "items_id": -1080951229,
+                "image": "/public/uploads/items/gallery/2018/03/25/20180325071257448069717_items_gallery.jpg",
+                "created_at": "2018-03-25 14:12:57",
+                "updated_at": "2018-03-25 14:12:57"
+            },
+            {
+                "id": -1080924531,
+                "items_id": -1080951229,
+                "image": "/public/uploads/items/gallery/2018/03/25/201803250712571031673401_items_gallery.jpg",
+                "created_at": "2018-03-25 14:12:57",
+                "updated_at": "2018-03-25 14:12:57"
+            }
+        ],
+        "accessories": [
+            {
+                "id": 5,
+                "item_id": 1009994241,
+                "parent_id": -1080951229,
+                "items": {
+                    "id": 1009994241,
+                    "view_counter": 2,
+                    "user_id": 1,
+                    "cities_id": 154,
+                    "brands_id": 1594027318962505,
+                    "sub_categories_id": 1128711679,
+                    "status_id": 1594027673160807,
+                    "title": "اثاث مكتبي جديد للبيع",
+                    "desc": "<p>للبيع اثاث مكتبي جديد بالتغليف</p>",
+                    "thumbnail_image": "/public/uploads/items/2018/03/21/201803211244511408170493_items.jpg",
+                    "type": "1",
+                    "fixed_price": 0,
+                    "address": "القصيم",
+                    "active": 1,
+                    "created_at": "2018-03-21 19:44:51",
+                    "updated_at": "2018-03-28 15:10:26",
+                    "feature": 0,
+                    "discount_price": 20,
+                    "ratio": 0
+                }
+            },
+            {
+                "id": 4,
+                "item_id": 393337089,
+                "parent_id": -1080951229,
+                "items": {
+                    "id": 393337089,
+                    "view_counter": 1,
+                    "user_id": 1,
+                    "cities_id": 150,
+                    "brands_id": 820920412,
+                    "sub_categories_id": 1242733519,
+                    "status_id": 1594027673160807,
+                    "title": "شنط حريمي تصنيع يدوي 100 %",
+                    "desc": "<p>شنط الاناقه والمتانه ذات العمر الطويل&nbsp;<br />\r\nالشنطه تصنيع يدوي خالص بايدي مصريه<br />\r\nتشكيله كبيره تناسب كل الازواق<br />\r\nيوجد ايضا محفظه حريمي (بوك)&nbsp;<br />\r\n&nbsp;</p>",
+                    "thumbnail_image": "/public/uploads/items/2018/03/22/20180322075535742141594_items.jpg",
+                    "type": "2",
+                    "fixed_price": 150,
+                    "address": "الباحة",
+                    "active": 1,
+                    "created_at": "2018-03-22 14:55:35",
+                    "updated_at": "2018-03-22 16:52:32",
+                    "feature": 0,
+                    "discount_price": 0,
+                    "ratio": 0
+                }
+            },
+            {
+                "id": 3,
+                "item_id": -1080951229,
+                "parent_id": -1080951229,
+                "items": {
+                    "id": -1080951229,
+                    "view_counter": 2,
+                    "user_id": 1,
+                    "cities_id": 151,
+                    "brands_id": 871155802,
+                    "sub_categories_id": 1228095851,
+                    "status_id": 1594027673160807,
+                    "title": "فستان سهرة من اجود الخامات",
+                    "desc": "<p>فستان سهرة من اجود الخامات</p>\r\n\r\n<p>بجميع الالوان</p>\r\n\r\n<p>متاح باغلب المقاسات</p>",
+                    "thumbnail_image": "/public/uploads/items/2018/03/25/20180325071257181451749_items.jpg",
+                    "type": "2",
+                    "fixed_price": 1000,
+                    "address": "الجوف",
+                    "active": 1,
+                    "created_at": "2018-03-25 14:12:57",
+                    "updated_at": "2018-04-01 09:15:09",
+                    "feature": 0,
+                    "discount_price": 40,
+                    "ratio": 0
+                }
+            }
+        ],
+        "item_specifications": []
+    }
+}
+                    </td>
+                    <td><img src="11.Product Details Page.jpg" style="width: 400px;"></td>
+                </tr>
+                                        <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/addFavorite</th>
+                <td>
+{<br>
+	"UserID":"436269142",<br>
+	"ItemID":"-1080951229"<br>
+
+    
+}   <br>
+                    </td>
+                  
+  
+                        <td>
+                            {<br>
+    "message": "Item added to favorite",<br>
+    "status": true<br>
+}<br>
+                    </td>
+                    <td><img src="11.Product Details Page.jpg" style="width: 400px;"></td>
+                </tr>
+                                                        <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/removeFavorite</th>
+                <td>
+{<br>
+	"UserID":"436269142",<br>
+	"ItemID":"-1080951229"<br>
+
+    
+}   <br>
+                    </td>
+                  
+  
+                        <td>
+                            {<br>
+    "message": "Item removed from favorite",<br>
+    "status": true<br>
+}<br>
+                    </td>
+                    <td><img src="11.Product Details Page.jpg" style="width: 400px;"></td>
+                </tr>
+                
+              <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/getShoppingCart</th>
+                <td>
+{<br>
+	"UserID":"436269142"<br>
+
+
+    
+}   <br>
+                    </td>
+                  
+  
+                        <td>
+{
+    "msg": "success",
+    "status": true,
+    "result": [
+        {
+            "id": 20,
+            "user_id": 1598162359977411,
+            "item_id": -1587800846,
+            "quantity": 2,
+            "color": null,
+            "size": null,
+            "image": "/public/uploads/items/2018/03/25/201803250813091490646263_items.jpg",
+            "name": "فساتين زفاف  للمحجبات",
+            "created_at": "2018-04-22 12:18:22",
+            "updated_at": "2018-04-22 12:18:22",
+            "price": 0
+        },
+        {
+            "id": 21,
+            "user_id": 1598162359977411,
+            "item_id": -657005264,
+            "quantity": 4,
+            "color": null,
+            "size": null,
+            "image": "/public/uploads/items/2018/03/22/20180322110341705728942_items.jpg",
+            "name": "ساعة رادو ذهبى تحفة فنية ذهبية اصلية جديدة بالعلبة",
+            "created_at": "2018-04-22 12:18:22",
+            "updated_at": "2018-04-22 12:18:22",
+            "price": 0
+        },
+        {
+            "id": 23,
+            "user_id": 1598162359977411,
+            "item_id": 337599027,
+            "quantity": 1,
+            "color": null,
+            "size": null,
+            "image": "/public/uploads/items/2018/03/19/20180319112758690606997_items.jpg",
+            "name": "ساعة ذهبية ذات ماركة عالمية",
+            "created_at": "2018-04-22 12:18:22",
+            "updated_at": "2018-04-22 12:18:22",
+            "price": 0
+        },
+        {
+            "id": 22,
+            "user_id": 1598162359977411,
+            "item_id": -1273304321,
+            "quantity": 1,
+            "color": null,
+            "size": null,
+            "image": "/public/uploads/items/2018/03/22/201803221526571479861145_items.jpg",
+            "name": "مانع انقطاع تيار 2 كيلو خروج 110 فولت PURE SINE WAVE",
+            "created_at": "2018-04-22 12:18:22",
+            "updated_at": "2018-04-22 12:18:22",
+            "price": 0
+        },
+        {
+            "id": 19,
+            "user_id": 1598162359977411,
+            "item_id": -1080951229,
+            "quantity": 1,
+            "color": null,
+            "size": null,
+            "image": "/public/uploads/items/2018/03/25/20180325071257181451749_items.jpg",
+            "name": "فستان سهرة من اجود الخامات",
+            "created_at": "2018-04-22 12:18:22",
+            "updated_at": "2018-04-22 12:18:22",
+            "price": 0
+        },
+        {
+            "id": 18,
+            "user_id": 1598162359977411,
+            "item_id": -840305457,
+            "quantity": 1,
+            "color": null,
+            "size": null,
+            "image": "/public/uploads/items/2018/03/25/20180325104134645177436_items.jpg",
+            "name": "سلسله موديل جديد هاند ميد خامات قويه جدا باشكال مختلفه و اسعار لا تقبل المنافسة",
+            "created_at": "2018-04-22 12:18:22",
+            "updated_at": "2018-04-22 12:18:22",
+            "price": 0
+        }
+    ]
+}
+                    </td>
+                    <td><img src="12.Cart  Page.jpg" style="width: 400px;"></td>
+                </tr>
+                      <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/removeFromCart</th>
+                <td>
+{<br>
+	"UserID":"1598162359977411",<br>
+	"id":"24"<br>
+
+    
+}<br>
+                    </td>
+                  
+  
+                        <td>
+{
+    "msg": "success",
+    "status": true,
+    "result": [
+        {
+            "id": 20,
+            "user_id": 1598162359977411,
+            "item_id": -1587800846,
+            "quantity": 2,
+            "color": null,
+            "size": null,
+            "image": "/public/uploads/items/2018/03/25/201803250813091490646263_items.jpg",
+            "name": "فساتين زفاف  للمحجبات",
+            "created_at": "2018-04-22 12:18:22",
+            "updated_at": "2018-04-22 12:18:22",
+            "price": 0
+        },
+        {
+            "id": 21,
+            "user_id": 1598162359977411,
+            "item_id": -657005264,
+            "quantity": 4,
+            "color": null,
+            "size": null,
+            "image": "/public/uploads/items/2018/03/22/20180322110341705728942_items.jpg",
+            "name": "ساعة رادو ذهبى تحفة فنية ذهبية اصلية جديدة بالعلبة",
+            "created_at": "2018-04-22 12:18:22",
+            "updated_at": "2018-04-22 12:18:22",
+            "price": 0
+        },
+        {
+            "id": 23,
+            "user_id": 1598162359977411,
+            "item_id": 337599027,
+            "quantity": 1,
+            "color": null,
+            "size": null,
+            "image": "/public/uploads/items/2018/03/19/20180319112758690606997_items.jpg",
+            "name": "ساعة ذهبية ذات ماركة عالمية",
+            "created_at": "2018-04-22 12:18:22",
+            "updated_at": "2018-04-22 12:18:22",
+            "price": 0
+        },
+        {
+            "id": 22,
+            "user_id": 1598162359977411,
+            "item_id": -1273304321,
+            "quantity": 1,
+            "color": null,
+            "size": null,
+            "image": "/public/uploads/items/2018/03/22/201803221526571479861145_items.jpg",
+            "name": "مانع انقطاع تيار 2 كيلو خروج 110 فولت PURE SINE WAVE",
+            "created_at": "2018-04-22 12:18:22",
+            "updated_at": "2018-04-22 12:18:22",
+            "price": 0
+        },
+        {
+            "id": 19,
+            "user_id": 1598162359977411,
+            "item_id": -1080951229,
+            "quantity": 1,
+            "color": null,
+            "size": null,
+            "image": "/public/uploads/items/2018/03/25/20180325071257181451749_items.jpg",
+            "name": "فستان سهرة من اجود الخامات",
+            "created_at": "2018-04-22 12:18:22",
+            "updated_at": "2018-04-22 12:18:22",
+            "price": 0
+        },
+        {
+            "id": 18,
+            "user_id": 1598162359977411,
+            "item_id": -840305457,
+            "quantity": 1,
+            "color": null,
+            "size": null,
+            "image": "/public/uploads/items/2018/03/25/20180325104134645177436_items.jpg",
+            "name": "سلسله موديل جديد هاند ميد خامات قويه جدا باشكال مختلفه و اسعار لا تقبل المنافسة",
+            "created_at": "2018-04-22 12:18:22",
+            "updated_at": "2018-04-22 12:18:22",
+            "price": 0
+        }
+    ]
+}
+                    </td>
+                    <td><img src="13.Remove From Cart Page.jpg" style="width: 400px;"></td>
+                </tr>
+                   <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/addToCart</th>
+                <td>
+                    {<br>
+	"UserID":"1598162359977411",<br>
+	"ItemID":"245",<br>
+
+	"price":"20",<br>
+	"name":"12"<br>
+	
+
+    
+}<br>
+
+quantity,color,size,image
+                    </td>
+                  
+                    <td>
+                       {<br>
+    "message": "Successfully",<br>
+    "status": true<br>
+} <br>
+                    </td>
+               
+                    <td><img src="11.Product Details Page.jpg" style="width: 400px;"></td>
+                </tr>
+                          <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/getCountries</th>
+                <td>
+         not data
+                    </td>
+                  
+                    <td>
+{<br>
+    "msg": "success",<br>
+    "status": true,<br>
+    "result": [<br>
+        {<br>
+            "id": 1,<br>
+            "name": "الأردن"<br>
+        },<br>
+        ]<br>
+        }<br>
+                    </td>
+               
+                    <td><img src="14.Filling Shopping Details Page .jpg" style="width: 400px;"></td>
+                </tr>
+                  <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/getCities</th>
+                <td>
+                    {<br>
+"CountryID":2<br>
+
+}   <br>
+                    </td>
+                  
+                    <td>
+{
+    "msg": "success",
+    "status": true,
+    "result": [
+        {
+            "id": 13,
+            "name": "أم القيوين"
+        },
+        {
+            "id": 14,
+            "name": "ابو ظبى"
+        },
+                    </td>
+               
+                    <td><img src="14.Filling Shopping Details Page .jpg" style="width: 400px;"></td>
+                </tr>
+                <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/getRegions</th>
+                <td>
+                    {<br>
+"CityID":2<br>
+
+}   <br>
+                    </td>
+                  
+                    <td>
+{<br>
+    "msg": "success",<br>
+    "status": true,<br>
+    "result": [<br>
+        {<br>
+            "id": 1,<br>
+            "name": "test"<br>
+        },<br>
+        {<br>
+            "id": 2,<br>
+            "name": "testbr>"<br>
+        }<br>
+    ]<br>
+}<br>
+                    </td>
+               
+                    <td><img src="14.Filling Shopping Details Page .jpg" style="width: 400px;"></td>
+                </tr>
+                              <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/getShippingAddresses</th>
+                <td>
+                    {<br>
+"UserID":1<br>
+
+}   <br>
+                    </td>
+                  
+                    <td>
+{<br>
+    "msg": "success",<br>
+    "status": true,<br>
+    "result": [<br>
+        {<br>
+            "shipping_cost": 0,<br>
+            "unit_number": 22,<br>
+            "floor_number": 22,<br>
+            "address": "dccc",<br>
+            "phone": "ccccc",<br>
+            "id": 1,<br>
+            "name": "ccc",<br>
+            "region": "test",<br>
+            "city": " سول",<br>
+            "country": "الصومال"<br>
+        }<br>
+    ]<br>
+}<br>
+                    </td>
+               
+                    <td><img src="15.Shopping Details Page.jpg" style="width: 400px;"></td>
+                </tr>
+                
+                                       <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/addShippingAddress</th>
+                <td>
+{
+	"UserID":"1",
+	"UserRegion":"1",
+	"name":"jnjj",
+	"phone":"1233554",
+	"address":"vvvv",
+	"floor_number":"12",
+	"unit_number":"45"
+	
+}
+                    </td>
+                  
+                    <td>
+{
+    "message": "Successfully",
+    "status": true
+}
+                    </td>
+               
+                    <td><img src="14.Filling Shopping Details Page .jpg" style="width: 400px;"></td>
+                </tr>
+                                         <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/deleteShippingAddress</th>
+                <td>
+{
+	"UserID":"1",
+	"ShippingAddressID":"1599182100431585"
+
+	
+}                    </td>
+                  
+                    <td>
+{
+    "msg": "success",
+    "status": true,
+    "result": [
+        {
+            "shipping_cost": 0,
+            "unit_number": 22,
+            "floor_number": 22,
+            "address": "dccc",
+            "phone": "ccccc",
+            "id": 1,
+            "name": "ccc",
+            "region": "test",
+            "city": " سول",
+            "country": "الصومال"
+        },
+        {
+            "shipping_cost": 0,
+            "unit_number": 0,
+            "floor_number": 0,
+            "address": null,
+            "phone": "1233554",
+            "id": 1599182028346885,
+            "name": "jnjj",
+            "region": "test",
+            "city": " سول",
+            "country": "الصومال"
+        },
+        {
+            "shipping_cost": 0,
+            "unit_number": 45,
+            "floor_number": 12,
+            "address": "vvvv",
+            "phone": "1233554",
+            "id": 1599182181470354,
+            "name": "jnjj",
+            "region": "test",
+            "city": " سول",
+            "country": "الصومال"
+        }
+    ]
+}
+                    </td>
+               
+                    <td><img src="15.Shopping Details Page.jpg" style="width: 400px;"></td>
+                </tr>
+                    <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/updateShippingAddress</th>
+                <td>
+
+{
+	"ShippingAddressID":"1599182028346885",
+
+	"UserID":"1",
+	"UserRegion":"1",
+	"name":"jnjj",
+	"phone":"1233554"
+	
+}
+                </td>
+                  
+                <td>
+                    
+                  {
+    "message": "Successfully",
+    "status": true,
+    "result": {
+        "id": 1599182028346885,
+        "address": null,
+        "name": "jnjj",
+        "phone": "1233554",
+        "floor_number": null,
+        "unit_number": null,
+        "region_id": "1",
+        "user_id": "1",
+        "created_at": "2018-04-30 14:33:47",
+        "updated_at": "2018-04-30 15:13:16"
+    }
+}  
+                    
+                </td>
+               
+                    <td><img src="14.Filling Shopping Details Page .jpg" style="width: 400px;"></td>
+                </tr>
+                       <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/updateProfile</th>
+                <td>
+{
+	"id":"95690895",
+	
+	
+	"Name":"ahmed",
+	"Phone":"ahmed",
+		"Address":"ahmed",
+			"FloorNumber":"123"
+
+}
+
+//body form = Image
+
+
+
+                </td>
+                  
+                <td>
+                    
+    {
+    "message": "Successfully",
+    "status": true,
+    "result": {
+        "id": 95690895,
+        "name": "ahmed",
+        "email": "safaa.ashraf@outlook.com",
+        "phone": "ahmed",
+        "image": "2018/03/03/201803221417201914826640_user_img.jpg",
+        "cities_id": null,
+        "region_id": null,
+        "address": null,
+        "lat": null,
+        "long": null,
+        "floor_number": "123",
+        "unit_number": null,
+        "about": null,
+        "facebook_profile": null,
+        "google_profile": null,
+        "twitter_profile": null,
+        "type": null,
+        "active": 1,
+        "permissions": "agent",
+        "created_at": "2018-03-22 20:32:11",
+        "updated_at": "2018-04-30 15:29:34",
+        "provider": "",
+        "provider_id": "",
+        "api_token": ""
+    }
+}            
+                </td>
+               
+                    <td><img src="25.Edit My Settings Page.jpg" style="width: 400px;"></td>
+                </tr>
+                
+                          <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/getOrders</th>
+                <td>
+{
+	"UserID":"1"
+}
+
+                </td>
+                  
+                <td>
+                    
+{
+    "message": "Successfully",
+    "status": true,
+    "result": [
+        {
+            "id": 12,
+            "order_number": "12",
+            "order_date": "2018-05-02 10:02:08",
+            "order_price": 500
+        }
+    ]
+}    
+                </td>
+               
+                    <td><img src="22.My Orders Page.jpg" style="width: 400px;"></td>
+                </tr>
+                                  <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/getOrderDetails</th>
+                <td>
+{
+	"OrderID":"12"
+}
+                </td>
+                  
+                <td>
+                    
+{
+    "message": "Successfully",
+    "status": true,
+    "result": {
+        "id": 12,
+        "order_number": "12",
+        "order_date": "2018-05-02 10:02:08",
+        "order_price": 500,
+        "address": "",
+        "floor_number": 0,
+        "unit_number": 0,
+        "city": "",
+        "region": "",
+        "items": [
+            {
+                "id": 77,
+                "title": "ff",
+                "image": "ff",
+                "price": 55,
+                "count": 12,
+                "item_id": 12
+            },
+            {
+                "id": 88,
+                "title": "ff",
+                "image": "ff",
+                "price": 55,
+                "count": 12,
+                "item_id": 12
+            }
+        ]
+    }
+}
+                </td>
+               
+                    <td><img src="23.Order Details Page.jpg" style="width: 400px;"></td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/getUserFavorite</th>
+                    <td>
+                        {
+                        "user_id":"338110636"
+                        }
+                    </td>
+
+                    <td>
+
+                        {
+                        "message": "المنتجات المفضلة لدى هذا المستخدم",
+                        "status": true,
+                        "result": [
+                        {
+                        "id": 211450199,
+                        "title": "اقلام فضية ذات جودة عالية وماركة عالمية",
+                        "image": "/public/uploads/items/2018/03/19/201803191129581251033972_items.jpg",
+                        "price": 0,
+                        "brand": "ديور"
+                        },
+                        {
+                        "id": 689253306,
+                        "title": "فستان سواريه ستان ليكرا في جوبير",
+                        "image": "/public/uploads/items/2018/03/19/20180319112222705261889_items.jpg",
+                        "price": 0,
+                        "brand": "اكتيف"
+                        },
+                        {
+                        "id": 287206241,
+                        "title": "للبيع سماعة Bluetooth حديثة",
+                        "image": "/public/uploads/items/2018/03/21/201803211233211042307598_items.jpg",
+                        "price": 0,
+                        "brand": "لينوفو"
+                        },
+                        {
+                        "id": 1009994241,
+                        "title": "اثاث مكتبي جديد للبيع",
+                        "image": "/public/uploads/items/2018/03/21/201803211244511408170493_items.jpg",
+                        "price": 20,
+                        "brand": "اكتيف"
+                        }
+                        ]
+                        }
+                    </td>
+
+                    <td><img src="22.Favorite.jpg" style="width: 400px;"></td>
+                </tr>
+                   <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/getBrandItems</th>
+                    <td>
+{
+"BrandID":"820920412",
+"sub_CategoryID":"",
+"CategoryID":"1526943076,708538442"
+}
+                    </td>
+
+                    <td>
+                        {
+                        "msg": "success",
+                        "status": true,
+                        "result": {
+                        "items": [
+                        {
+                        "id": -2116620788,
+                        "title": "شنطة خروج بناتي",
+                        "image": "/public/uploads/items/2018/03/22/20180322140517654630792_items.jpg",
+                        "price": 160,
+                        "is_favorite": 0
+                        },
+                        {
+                        "id": -1519367203,
+                        "title": "شنط كروس بوكس قمة في الشياكة",
+                        "image": "/public/uploads/items/2018/03/25/201803250705591240701397_items.jpg",
+                        "price": 0,
+                        "is_favorite": 0
+                        },
+                        {
+                        "id": -840305457,
+                        "title": "سلسله موديل جديد هاند ميد خامات قويه جدا باشكال مختلفه و اسعار لا تقبل المنافسة",
+                        "image": "/public/uploads/items/2018/03/25/20180325104134645177436_items.jpg",
+                        "price": 0,
+                        "is_favorite": 0
+                        },
+                        {
+                        "id": 337599027,
+                        "title": "ساعة ذهبية ذات ماركة عالمية",
+                        "image": "/public/uploads/items/2018/03/19/20180319112758690606997_items.jpg",
+                        "price": 0,
+                        "is_favorite": 0
+                        },
+                        {
+                        "id": 393337089,
+                        "title": "شنط حريمي تصنيع يدوي 100 %",
+                        "image": "/public/uploads/items/2018/03/22/20180322075535742141594_items.jpg",
+                        "price": 0,
+                        "is_favorite": 0
+                        },
+                        {
+                        "id": 401536685,
+                        "title": "خاتم فضة حريمي ذات جودة عالية",
+                        "image": "/public/uploads/items/2018/03/20/201803201241341317883619_items.jpg",
+                        "price": 0,
+                        "is_favorite": 0
+                        },
+                        {
+                        "id": 523531126,
+                        "title": "شنط كروشيه",
+                        "image": "/public/uploads/items/2018/03/21/20180321123707668863233_items.jpg",
+                        "price": 0,
+                        "is_favorite": 0
+                        },
+                        {
+                        "id": 642170238,
+                        "title": "ساعات حائط ثرى دى",
+                        "image": "/public/uploads/items/2018/03/22/20180322090748545028797_items.jpg",
+                        "price": 0,
+                        "is_favorite": 0
+                        }
+                        ],
+                        "all_size": [
+                        {
+                        "id": 1592396435669811,
+                        "size": "xl",
+                        "total": 1
+                        },
+                        {
+                        "id": 1592099061958477,
+                        "size": "xs",
+                        "total": 1
+                        }
+                        ],
+                        "all_colors": [
+                        {
+                        "title": "بنى",
+                        "id": 74,
+                        "total": 1
+                        }
+                        ],
+                        "categories": [
+                        {
+                        "id": 708538442,
+                        "category": "مقتنيات ثمينة",
+                        "total": 2
+                        },
+                        {
+                        "id": 1526943076,
+                        "category": "مقتنيات نسائية",
+                        "total": 6
+                        },
+                        {
+                        "id": 1572135943,
+                        "category": "أثاث",
+                        "total": 1
+                        }
+                        ],
+                        "sub_categorie": [
+                        {
+                        "id": 899027881,
+                        "category": "ساعات",
+                        "total": 2
+                        },
+                        {
+                        "id": 1100162663,
+                        "category": "أثاث منزلى",
+                        "total": 1
+                        },
+                        {
+                        "id": 1242733519,
+                        "category": "شنط",
+                        "total": 4
+                        },
+                        {
+                        "id": 1258339059,
+                        "category": "إكسسوارات",
+                        "total": 2
+                        }
+                        ]
+                        }
+                        }
+                    </td>
+
+                    <td><img src="" style="width: 400px;"></td>
+                </tr>
+                <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/registerSocial</th>
+                    <td>
+         required
+{
+"provider":"facebook",
+"provider_id":"666",
+"email":"ddd@gmail.com"
+} 
+
+
+//not required   name ,phone
+                    </td>
+
+                    <td>
+                        {
+                        "status": true,
+                        "message": "success",
+                        "result": [
+                        {
+                        "id": 1600456514110181,
+                        "username": null,
+                        "email": "ddd@gmail.com",
+                        "profile_image": null,
+                        "phone": null,
+                        "country ": null,
+                        "address": null,
+                        "unit_number": null,
+                        "floor_number": null,
+                        "cart_count": 0
+                        }
+                        ]
+                        }
+                    </td>
+
+                    <td><img src="02.Sign in Page.jpg" style="width: 400px;"></td>
+                </tr>
+                       <tr>
+                    <th scope="row">http://dev.lodex-solutions.com/workspace/tajer/api/ar/getUserProfile</th>
+                    <td>
+  {
+"UserID":"4362691422"
+
+} 
+                    </td>
+
+                    <td>
+             {
+    "message": "data user",
+    "status": true,
+    "result": [
+        {
+            "id": 436269142,
+            "username": "Abonwag",
+            "email": "al_sarani@hotmail.com",
+            "profile_image": null,
+            "phone": 505319307,
+            "country ": null,
+            "address": null,
+            "unit_number": null,
+            "floor_number": null,
+            "cart_count": 0
+        }
+    ]
+}
+                    </td>
+
+                    <td><img src="24.My Settings Page.jpg" style="width: 400px;"></td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

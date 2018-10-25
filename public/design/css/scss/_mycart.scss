@@ -1,0 +1,101 @@
+.mycart{
+    padding-top: 84px;
+    h1{
+        color: $color2;
+        font-size: $font35;
+        font-family: $bolder;
+        margin-bottom: 31px;
+    }
+    .box-cart{
+        border-radius: 5px;
+        border: 1px solid $color4;
+        padding:18px 15px 17px 20px;
+        margin-bottom: 12px;
+        position: relative;
+        &:last-of-type{
+            margin-bottom: 40px;
+        }
+        img{
+            width: 200px;
+            height: 164px;
+            object-fit: cover;
+        }
+        .info{
+            margin-right: 20px;
+            p{
+                color: $color1;
+                font-size: $font22;
+                font-family: $bolder;
+            }
+         form{
+             span{
+                 font-size: $font30;
+                 color: $color3;
+                 font-family: $bolder;
+             }
+             input{
+                 width: 40px;
+                 border: none;
+                 background-color: transparent;
+                 color: $color2;
+                 text-align: center;
+                 font-size: $font17;
+             }
+             button{
+                 width: 40px;
+                 border: 1px solid $color2;
+                 color: $color2;
+                 background: transparent;
+                 &:focus{
+                     outline: none;
+                 }
+             }
+         }
+        }
+        .delete{
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            cursor: pointer;
+            color: $color4;
+        }
+    }
+    .content{
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        h2{
+            color: $color2;
+            font-family: $bolder;
+        }
+        .btn{
+            @extend %btn1;
+            width: 90%;
+            display: block;
+            font-family: $bolder;
+            margin-bottom: 20px;
+            font-size: $font17;
+            &:hover{
+                color: $color2;
+            }
+        }
+        .table{
+            th,td{
+                border: none;
+                color: $color1;
+                font-size: $font17;
+                font-family: $bolder;
+            }
+            .all,.f-price{
+                border-top: 2px solid $color2;
+                padding-top: 30px;
+                color: $color2;
+                font-family: $bolder;
+                font-size: $font25;
+            }
+        }
+    }
+}

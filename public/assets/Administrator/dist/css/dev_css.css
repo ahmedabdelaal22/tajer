@@ -1,0 +1,252 @@
+.skin-blue .main-header .navbar {
+background-color: #bb8d3f !important;
+}
+
+
+.skin-blue .main-header .logo {
+background-color: #bb8d3f !important;
+}
+.btn-block{
+    background-color: #bb8d3f !important;
+
+}
+body{
+font-family: 'Open Sans', sans-serif !important;
+}
+
+.btn-info {
+background-color: #000 !important;
+border-color: #000 !important;
+}
+
+.btn-info:hover{
+    background-color: #444 !important;
+}
+.box.box-info {
+border-top-color: #b5b5b5 !important;
+}
+
+.box-body input,.box-body select{
+margin-bottom: 10px;
+}
+
+.box{
+border-top: none !important;
+margin-top: 20px;    
+}
+
+.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
+background-color: #222d32 !important;
+}
+.skin-blue .sidebar-menu > li.header{
+    background-color: #1a2226 !important;
+}
+
+.cancle,.btn-app{
+border-radius: 0  !important;
+position: relative;
+padding: 15px 5px;
+margin: 0 0 10px 0px  !important;
+min-width: 50px  !important;
+height: 30px !important;
+text-align: left  !important;
+color: #343a46 !important;
+border: none  !important;
+background-color: transparent !important;
+outline: none !important;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+vertical-align: inherit !important;
+    text-transform: capitalize !important;
+}
+
+.fa.fa-trash-o{
+font-size: 25px !important;
+}
+
+.btn-app>.fa, .btn-app>.glyphicon, .btn-app>.ion{
+font-size: 25px  !important;
+}
+
+.box-body{
+margin-top: 15px;    
+}
+
+.btn-info{
+min-width:100px;    
+}
+
+.modal .fa.fa-trash{
+float: left;
+margin-left: 10px;
+margin-right: 15px;
+margin-top: 5px;
+}
+
+.modal-title{
+text-align: left;
+}
+
+.modal-body,.modal-footer{
+text-align: left;
+}
+
+.ms7{
+margin-bottom: 0 !important;
+}
+
+tr:nth-child(odd){
+background-color:  #f9f4ec;
+}
+
+.table-hover>tbody>tr:nth-child(odd):hover {
+background-color: #f4ebdd;
+}
+.table-hover>tbody>tr:nth-child(even):hover {
+background-color: #fff;
+}
+
+.head{
+background: #efe2ce !important;
+}
+
+.skin-blue .main-header ..skin-blue .main-header .navbar.nav>li>a{
+font-size: 18px;
+}
+
+.logo-lg b{
+text-transform: uppercase;   
+}
+
+.btn-default{
+min-width:100px;   
+margin-right: 10px;    
+}
+
+.box-footer{
+float: right;
+}
+
+.btn-app:active, .btn-app:focus{
+-webkit-box-shadow:none !important;
+box-shadow:none !important;
+}
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+background-color: ##bb8d3e !important;
+}
+
+.control-sidebar{
+padding-top: 0 !important;
+}
+
+.g-btns{
+float: left;
+}
+
+.g-btns button{
+width: 120px;
+background: #000 !important;
+border: none;
+height: 40px;
+border-radius: 3px; 
+}
+
+.g-btns a,.add-btn a{
+color: #fff;
+font-size: 18px;    
+}
+
+.add-btn button{
+width: 120px;
+background: #bb8d3e !important;
+border: none;
+height: 40px;
+border-radius: 3px;
+margin: 10px 20px;     
+}
+.add-btn button:hover{
+    background-color: #bb8d3ecc !important;
+}
+.btn-info,
+.btn-primary{
+	background: #bb8d3e !important;
+	border:1px solid #bb8d3e !important;
+
+}
+.btn-info:hover,
+.btn-primary:hover{
+	    background-color: #bb8d3ecc !important;
+	    border:1px solid #bb8d3ecc !important;
+}
+.table tr:nth-child(2n+1){
+	background-color: #f9f4ec !important;
+
+}
+.logo-lg b{
+	font-size: 25px;
+}
+.skin-blue .main-header .navbar .nav > li > a{
+	font-size: 21px;
+}
+.modal-title {
+	font-size: 20px;
+	font-weight: bold;
+}
+.modal-title .fa{
+	font-weight: normal;
+}
+
+.m-bottom{
+margin-bottom: 20px;
+}
+
+.customcb,.orders,.carriers,.car_type,.destination,.trans_to,.trans_from,.products,.product_details,.values_gifts,.service_setting,.service_email_setting,.generate_report{
+/*display: inline-block !important;*/
+/*margin-right: 10px;*/
+}
+
+.ov-hidden{
+overflow: hidden;
+}
+
+.ch-ma{
+margin: 0 0px 0 8px !important;
+}
+
+input[type=checkbox], input[type=radio]{
+margin: 0 !important;
+}
+
+label{
+margin-bottom: 0 !important;
+}
+
+.perm{
+font-weight: bold;
+background: #efe2ce !important;
+margin: 20px 0 20px 0;
+font-size: 18px;
+padding: 10px;
+}
+
+.odd{
+background-color: #f4ebdd;
+padding: 10px 0;    
+}
+
+/*
+.odd:hover{
+background-color:#f4ebdd ; 
+}
+*/
+
+/* Start Code Ali mehomud */
+.box-body .form-group label{
+    margin-bottom: 10px !important;
+    text-transform: capitalize;
+}
+.skin-blue .sidebar a{
+    color: #fff;
+}
+

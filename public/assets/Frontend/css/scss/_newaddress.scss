@@ -1,0 +1,54 @@
+.newaddress{
+    padding-top: 87px;
+    h2{
+        font-size: $font30;
+        color: $color5;
+        margin-bottom: 32px;
+    }
+    form{
+        @extend %form;
+    }
+    select{
+        @extend %select;
+        border-radius: 5px;
+        border: 1px solid $color4;
+        text-indent: 15px;
+        height: 50px;
+        margin-bottom: 18px;
+    }
+}
+.uplode {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 40px;
+    .file-upload {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            
+        }
+    }
+
+    .file-upload__label {
+        display: block;
+        background: transparent;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .file-upload__input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        font-size: 1;
+        width: 0;
+        height: 100%;
+        opacity: 0;
+    }
+}

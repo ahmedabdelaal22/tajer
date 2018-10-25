@@ -1,0 +1,15 @@
+.contact{
+    padding-top: 78px;
+    h2{
+        font-size: $font30;
+        color: $color5;
+    }
+    p{
+        font-size: $font25;
+        color: $color1;
+        margin-bottom: 24px;
+    }
+    form{
+     @extend %form;
+    }
+}

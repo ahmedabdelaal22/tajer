@@ -1,0 +1,52 @@
+.lbl-prodect{
+    position: relative;
+    img{
+        margin-top: 14px;
+padding: 5px;
+    }
+    input[type="radio"]{
+       display: none;
+       + .input-span{
+           display: block;
+           width: 100%;
+        height: 100%;
+          border:5px solid transparent;
+       }
+       &:checked{
+           + .input-span{
+               border:5px solid #3598DB;
+           }
+       }
+    }
+}
+.btn-act{
+    padding-top: 80px;
+    .btn{
+        @extend %btn1;
+        height:50px;
+        margin-bottom:20px;
+        font-size:$font20;
+        font-family:$bolder;
+    }
+    .btn-add{
+        background-color:$color2;
+    
+        &:hover{
+            color:$color2;
+        }
+    }
+    .btn-edit{
+        background-color:#CCCCCC;
+         &:hover{
+            color:#CCCCCC;
+             border:2px solid #CCCCCC;
+        }
+    }
+    .btn-delete{
+        background-color:#FC4C3A;
+         &:hover{
+            color:#FC4C3A;
+            border:2px solid #FC4C3A;
+        }
+    }
+}

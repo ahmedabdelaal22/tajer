@@ -1,0 +1,29 @@
+.orders{
+    padding-top: 84px;
+    h3{
+        color: $color2;
+        font-family: $bolder;
+        font-weight: bolder;
+        font-size: $font35;
+        margin-bottom: 20px;
+    }
+    .table{
+        .border-none{
+            border: none;
+        }
+        .req{
+            color: $color1;
+            font-size: $font20;
+            font-family: $bolder;
+        }
+        .date{
+            color: $color4;
+            font-size: $font17;
+        }
+        .price{
+            color: $color2;
+            font-size: $font35;
+            font-family: $bolder;
+        }
+       }
+}
